@@ -5,8 +5,8 @@
         <title>HTML Academy: Седона</title>
     </head>
     <body>
-        <header class="main-header">
-            <div class="container">
+        <div class="container">
+            <header class="main-header">
                 <nav class="main-navigation">
                     <ul>
                         <li>
@@ -14,6 +14,9 @@
                         </li>
                         <li>
                             <a href="#">Фото и видео</a>
+                        </li>
+                        <li class="main-navigation-list-item">
+                            <img src="https://placebear.com/150/100" width="140" height="70" alt="Седона">
                         </li>
                         <li>
                             <a href="#">Карта сайта</a>
@@ -25,33 +28,37 @@
                 </nav>
             </div>
         </header>
-        <main class="container">
+        <main class="">
         <div class="about-hostel">
             <h2 class="type"> Инфраструктура </h2>
             <div class="choise">
-                <input type="checkbox" checked>Бассейн
-                <input type="checkbox"> Парковка
-                <input type="checkbox"> Wi-Fi
+                <ul class="infrastructure">
+                    <li><input type="checkbox" checked>Бассейн</li>
+                    <li><input type="checkbox"> Парковка</li>
+                    <li><input type="checkbox"> Wi-Fi</li>
+                </ul>
             </div>
             <h2 class="type"> Тип жилья </h2>
             <div>
-                <input type="checkbox" checked> Гостиница
-                <input type="checkbox" checked> Мотель
-                <input type="checkbox" checked> Апартаменты
+                <ul>
+                    <li><input type="checkbox" checked> Гостиница</li>
+                    <li><input type="checkbox" checked> Мотель</li>
+                    <li><input type="checkbox" checked> Апартаменты</li>
+                </ul>
             </div>
             <h2 class="type"> Стоимость в сутки (Р) </h2>
             <div class="prise">
                 <div class="range-filter">
-                <div class="range-controls">
-                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div>
+                    <div class="range-controls">
+                        <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div>
+                    </div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
                 </div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-            </div>
-            <div class="price-controls">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="3 000">
-            </div>
+                <div class="price-controls">
+                    от <input class="min-price" type="text" value="0">
+                    до <input class="max-price" type="text" value="3 000">
+                </div>
             </div>
         </div>
         <div class="find">
@@ -72,6 +79,7 @@
                 <div class="prise-about"> От 3500 Р.</div>
                 <a href="#"> Подробнее </a>
                 <a href="#"> Забронировать </a>
+                <div class="stars"> <img src="#"></div>
                 <div class="rait"> Рейтинг: 8,5</div>
             </article>
             <article>
@@ -83,6 +91,7 @@
                 <div class="prise-about"> От 2000 Р.</div>
                 <a href="#"> Подробнее </a>
                 <a href="#"> Забронировать </a>
+                <div class="stars"> <img src="#"></div>
                 <div class="rait"> Рейтинг: 8,9</div>
             </article>
         </div>
@@ -95,27 +104,27 @@
             <div class="prise-about"> От 4000 Р.</div>
             <a href="#"> Подробнее </a>
             <a href="#"> Забронировать </a>
+            <div class="stars"> <img src="#"></div>
             <div class="rait"> Рейтинг: 9,2</div>
         </article>
         </main>
         <footer class="main-footer">
-            <div class="container">
-                <section class="tag">
-                    <p>#VISITSEDONA</p>
-                </section>
-                <section>
-                    <a class="social-btn social-btn-twitter" href="#">Twitter</a>
-                </section>
-                <section>
-                    <a class="social-btn social-btn-fb" href="#">Facebook</a>
-                </section>
-                <section>
-                    <a class="social-btn social-btn-YT" href="#">You Tube</a>
-                </section>
-            </div>
+            <section class="tag">
+                <p>#VISITSEDONA</p>
+            </section>
+            <section>
+                <a class="social-btn social-btn-twitter" href="#">Twitter</a>
+            </section>
+            <section>
+                <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            </section>
+            <section>
+                <a class="social-btn social-btn-YT" href="#">You Tube</a>
+            </section>
             <div>
                 <a href=""><img src="" alt="">ACADEMY</a>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
