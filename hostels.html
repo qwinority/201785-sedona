@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="debug">
         <div class="container">
             <header class="main-header">
                 <nav class="main-navigation">
@@ -29,143 +30,150 @@
             </header>
             <main class="prime">
             <div class="about-hostel">
-                <h2 class="type"> Инфраструктура </h2>
-                <div class="infrastructure">
-                    <ul class="infrastructure-list">
-                        <li class="infrastructure-list-item"><input type="checkbox" checked>Бассейн</li>
-                        <li class="infrastructure-list-item"><input type="checkbox"> Парковка</li>
-                        <li class="infrastructure-list-item"><input type="checkbox"> Wi-Fi</li>
-                    </ul>
+                <div class="INFR">
+                    <h2 class="type"> Инфраструктура </h2>
+                    <div class="infrastructure">
+                        <ul class="infrastructure-list">
+                            <li class="infrastructure-list-item"><input type="checkbox" checked>Бассейн</li>
+                            <li class="infrastructure-list-item"><input type="checkbox"> Парковка</li>
+                            <li class="infrastructure-list-item"><input type="checkbox"> Wi-Fi</li>
+                        </ul>
+                    </div>
                 </div>
-                <h2 class="type"> Тип жилья </h2>
-                <div class="infrastructure">
-                    <ul class="infrastructure-list">
-                        <li class="infrastructure-list-item"><input type="checkbox" checked> Гостиница</li>
-                        <li class="infrastructure-list-item"><input type="checkbox" checked> Мотель</li>
-                        <li class="infrastructure-list-item"><input type="checkbox" checked> Апартаменты</li>
-                    </ul>
+                <div class="type-house">
+                    <h2 class="type"> Тип жилья </h2>
+                    <div class="infrastructure">
+                        <ul class="infrastructure-list">
+                            <li class="infrastructure-list-item"><input type="checkbox" checked> Гостиница</li>
+                            <li class="infrastructure-list-item"><input type="checkbox" checked> Мотель</li>
+                            <li class="infrastructure-list-item"><input type="checkbox" checked> Апартаменты</li>
+                        </ul>
+                    </div>
                 </div>
-                <h2 class="type"> Стоимость в сутки (Р) </h2>
-                <div class="prise">
-                    <div class="range-filter">
-                        <div class="range-controls">
-                            <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div>
+                <div class="rangebar">
+                    <h2 class="type"> Стоимость в сутки (Р) </h2>
+                    <div class="prise">
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div>
+                            </div>
+                            <div class="toggle min-toggle"></div>
+                            <div class="toggle max-toggle"></div>
                         </div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
+                        <div class="price-controls">
+                            от <input class="min-price" type="text" value="0">
+                            до <input class="max-price" type="text" value="3 000">
+                        </div>
                     </div>
-                    <div class="price-controls">
-                        от <input class="min-price" type="text" value="0">
-                        до <input class="max-price" type="text" value="3 000">
-                    </div>
-                </div>
-            </div>
-            <div class="find">
-                <h2 class="find-about"> Найдено: 3 </h2>
-                <div class="sort">
-                    <a href="#"> По цене</a>
-                    <a href="#"> По типу</a>
-                    <a href="#"> По рейтингу</a>
-                </div>
-                <div class="arrows">
-                    <a href="#"></a>
-                    <a href="#"></a>
                 </div>
             </div>
-            <div class="menu">
-                <article class="hostel">
-                    <div class="photohostel" style="background: blue;">
-                        <img src="#" alt="Amara Resort&SPA">
-                    </div>
-                    <div class="hostel-info">
-                        <div class="hostel-name">
-                            <h2 class="hostel-name-title"> Amara Resort&SPA</h2>
-                            <div class="typeofhouse"> Гостиница </div>
-                            <div class="prise-about"> От 3500 Р.</div>
-                        </div>
-                        <div class="hostel-buttons">
-                            <a href="#"> Подробнее </a>
-                            <a href="#"> Забронировать </a>
-                        </div>
-                    </div>
-                    <div class="rating">
-                        <div class="rating-stars">
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                        </div>
-                        <div class="rait"> Рейтинг: 8,5</div>
-                    </div>
-                </article>
-                <article class="hostel">
-                    <div class="photohostel" style="background: blue;">
-                        <img src="#" alt="Amara Resort&SPA">
-                    </div>
-                    <div class="hostel-info">
-                        <div class="hostel-name">
-                            <h2 class="hostel-name-title"> Desert Quail Inn</h2>
-                            <div class="typeofhouse"> Мотель </div>
-                            <div class="prise-about"> От 2000 Р.</div>
-                        </div>
-                        <div class="hostel-buttons">
-                            <a href="#"> Подробнее </a>
-                            <a href="#"> Забронировать </a>
-                        </div>
-                    </div>
-                    <div class="rating">
-                        <div class="rating-stars">
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                        </div>
-                        <div class="rait"> Рейтинг: 8,5</div>
-                    </div>
-                </article>
-            <article class="hostel">
-                    <div class="photohostel" style="background: blue;">
-                        <img src="#" alt="Amara Resort&SPA">
-                    </div>
-                    <div class="hostel-info">
-                        <div class="hostel-name">
-                            <h2 class="hostel-name-title"> Villas At Poco Diablo</h2>
-                            <div class="typeofhouse"> Апартаменты </div>
-                            <div class="prise-about"> От 4000 Р.</div>
-                        </div>
-                        <div class="hostel-buttons">
-                            <a href="#"> Подробнее </a>
-                            <a href="#"> Забронировать </a>
-                        </div>
-                    </div>
-                    <div class="rating">
-                        <div class="rating-stars">
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                            <div class="stars"></div>
-                        </div>
-                        <div class="rait"> Рейтинг: 8,5</div>
-                    </div>
-                </article>
-            </div>
-            </main>
-            <footer class="main-footer">
-                <div class="tag">
-                    <a href="">#VISITSEDONA</a>
-                </div>
-                <div>
-                    <a class="social-btn social-btn-twitter" href="#">Twitter</a>
-                    <a class="social-btn social-btn-fb" href="#">Facebook</a>
-                    <a class="social-btn social-btn-YT" href="#">You Tube</a>
-                </div>
-                <div>
-                    <a href=""><img src="" alt="">ACADEMY</a>
-                </div>
-            </footer>
         </div>
-    </body>
+        <div class="find">
+            <h2 class="find-about"> Найдено: 3 </h2>
+            <div class="sort">
+                <a href="#"> По цене</a>
+                <a href="#"> По типу</a>
+                <a href="#"> По рейтингу</a>
+            </div>
+            <div class="arrows">
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="menu">
+            <article class="hostel">
+                <div class="photo-hostel" style="background: blue;">
+                    <img src="#" alt="Amara Resort&SPA">
+                </div>
+                <div class="hostel-info">
+                    <div class="hostel-name">
+                        <h2 class="hostel-name-title"> Amara Resort&SPA</h2>
+                        <div class="typeofhouse"> Гостиница </div>
+                        <div class="prise-about"> От 3500 Р.</div>
+                    </div>
+                    <div class="hostel-buttons">
+                        <a href="#"> Подробнее </a>
+                        <a href="#"> Забронировать </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="rait"> Рейтинг: 8,5</div>
+                </div>
+            </article>
+            <article class="hostel">
+                <div class="photo-hostel" style="background: blue;">
+                    <img src="#" alt="Amara Resort&SPA">
+                </div>
+                <div class="hostel-info">
+                    <div class="hostel-name">
+                        <h2 class="hostel-name-title"> Desert Quail Inn</h2>
+                        <div class="typeofhouse"> Мотель </div>
+                        <div class="prise-about"> От 2000 Р.</div>
+                    </div>
+                    <div class="hostel-buttons">
+                        <a href="#"> Подробнее </a>
+                        <a href="#"> Забронировать </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="rait"> Рейтинг: 8,5</div>
+                </div>
+            </article>
+            <article class="hostel">
+                <div class="photo-hostel" style="background: blue;">
+                    <img src="#" alt="Amara Resort&SPA">
+                </div>
+                <div class="hostel-info">
+                    <div class="hostel-name">
+                        <h2 class="hostel-name-title"> Villas At Poco Diablo</h2>
+                        <div class="typeofhouse"> Апартаменты </div>
+                        <div class="prise-about"> От 4000 Р.</div>
+                    </div>
+                    <div class="hostel-buttons">
+                        <a href="#"> Подробнее </a>
+                        <a href="#"> Забронировать </a>
+                    </div>
+                </div>
+                <div class="rating">
+                    <div class="rating-stars">
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                        <div class="stars"></div>
+                    </div>
+                    <div class="rait"> Рейтинг: 8,5</div>
+                </div>
+            </article>
+        </div>
+        </main>
+        <footer class="main-footer">
+            <div class="tag">
+                <a href="">#VISITSEDONA</a>
+            </div>
+            <div class="links">
+                <a class="social-btn social-btn-twitter" href="#">Twitter</a>
+                <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                <a class="social-btn social-btn-YT" href="#">You Tube</a>
+            </div>
+            <div class="link-academy">
+                <a href=""><img src="" alt="">ACADEMY</a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>

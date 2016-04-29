@@ -1,0 +1,374 @@
+.debug > * {
+outline: 4px solid green;
+}
+.debug > * > * {
+outline: 3px solid red;
+}
+.debug > * > * > * {
+outline: 2px solid orange;
+}
+.debug > * > * > * > * {
+outline: 1px solid gray;
+}
+body {
+
+}
+
+
+.container {
+	margin: 0 auto;
+	width: 768px;
+}
+
+.main-header {
+	
+}
+
+.main-navigation {
+
+}
+
+.main-navigation-list {
+
+}
+
+.main-navigation-list-item {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.prime {
+
+}
+.index-logo {
+
+}
+
+.features {
+
+}
+
+.features-item {
+	text-align: center;
+}
+
+.features-name {
+
+}
+
+.index-content {
+
+}
+
+.index-content-left {
+
+}
+.index-content-right {
+	float: right;
+	width: 500px;
+}
+
+.index-content-left-city {
+	float: left;
+	width: 200px;
+}
+
+.clearfix:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+.index-content-left-house {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	text-align: center;
+}
+.index-content-middle-food {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+.index-content-right-souvenirs {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	text-align: center;
+}
+
+.index-content-right-img {
+	float: left;
+}
+
+.index-content-left-bridge {
+	float: right;
+	width: 200px;
+}
+.index-content-left-attractions {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+.index-content-middle-road {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+.index-content-right-tourists {
+	display: inline-block;
+	width: 200px;
+	margin-right: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.order {
+	text-align: center;
+}
+
+.search {
+	width: 450px;
+	text-align: center;
+	margin-left: 160px;
+}
+
+.date-go {
+
+}
+
+.date-start {
+
+}
+
+.calendar {
+
+}
+
+.date-out {
+
+}
+
+.date-finish {
+
+}
+
+.adult {
+	display: inline-block;
+	margin-right: 20px;
+
+}
+
+.adult-plus {
+
+}
+
+.adult-minus {
+
+}
+
+.children {
+	display: inline-block;
+
+}
+
+.children-plus {
+
+}
+
+.children-minus {
+
+}
+
+.fuond {
+
+}
+
+.main-footer {
+
+}
+
+.tag {
+	display: inline-block;
+	margin-right: 180px;
+}
+.links {
+	display: inline-block;
+	margin-right: 180px;
+}
+.social-btn {
+
+}
+
+.social-btn-twitter {
+
+}
+
+.social-btn-fb {
+
+}
+
+.social-btn-YT {
+
+}
+.link-academy {
+	display: inline-block;
+}
+
+.prime {
+
+}
+
+.about-hostel {
+
+}
+.INFR {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.type-house {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.rangebar {
+	display: inline-block;
+	width: 250px;
+}
+.type {
+
+}
+
+.infastructure {
+
+}
+
+.infrastructure-list {
+
+}
+
+.infrastructure-list-item {
+
+}
+
+.prise {
+
+}
+
+.range-filter {
+
+}
+
+.range-controls {
+
+}
+
+.scale {
+
+}
+
+.toggle {
+
+}
+
+.min-toggle {
+
+}
+
+.max-toggle {
+
+}
+
+.price-controls {
+
+}
+
+.find {
+
+}
+
+.find-about {
+ 	display: inline-block;
+	margin-right: 30px;
+	width: 150px;
+}
+
+.sort {
+	display: inline-block;
+}
+
+.sort a {
+	display: inline-block;
+	margin-right: 30px;
+
+}
+
+.arrows {
+
+}
+
+.menu {
+
+}
+
+.hostel {
+
+}
+
+.photo-hostel {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.hostel-info {
+	display: inline-block;
+	width: 300px;
+}
+
+.hostel-name {
+	display: inline-block;
+	margin-right: 30px; 
+}
+
+.hostel-name-title {
+
+}
+
+.typeofhouse {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.prise-about {
+	display: inline-block;
+}
+
+.hostel-buttons {
+ 	display: inline-block;
+}
+.hostel-buttons a {
+	margin-right: 10px;
+}
+
+.rating {
+	display: inline-block;
+}
+
+.rating-stars {
+
+}
+
+.stars {
+
+}
+
+.rait {
+
+}
+
