@@ -21,7 +21,7 @@ body {
 }
 
 .main-header {
-	
+	font-size: 0;
 }
 
 .main-navigation {
@@ -29,12 +29,15 @@ body {
 }
 
 .main-navigation-list {
-
+	margin:0;
+	padding:0;
 }
 
 .main-navigation-list-item {
 	display: inline-block;
 	margin-right: 20px;
+	font-size: 14px;
+
 }
 
 .prime {
@@ -45,7 +48,7 @@ body {
 }
 
 .features {
-
+	font-size: 0;
 }
 
 .features-item {
@@ -53,11 +56,24 @@ body {
 }
 
 .features-name {
-
+ font-size: 21px;
 }
 
-.index-content {
+.feat-name5 {
+	font-size: 14px;
+}
+.index-content-city {
+	font-size: 0;
+}
 
+.index-content-title {
+	font-size: 21px;
+	text-align: center;
+}
+
+.sedona-isnt {
+	font-size: 14px;
+	text-align: center;	
 }
 
 .index-content-left {
@@ -71,6 +87,7 @@ body {
 .index-content-left-city {
 	float: left;
 	width: 200px;
+	vertical-align: middle;
 }
 
 .clearfix:after {
@@ -78,17 +95,29 @@ body {
 	content: '';
 	clear: both;
 }
+
+.facts-size {
+	font-size: 14px;
+	text-align: center;
+}
+
+.index-content-plus {
+	font-size: 0;
+
+}
 .index-content-left-house {
 	display: inline-block;
 	width: 200px;
 	margin-right: 40px;
 	text-align: center;
+	vertical-align: middle;
 }
 .index-content-middle-food {
 	display: inline-block;
 	width: 200px;
 	margin-right: 40px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .index-content-right-souvenirs {
@@ -96,6 +125,7 @@ body {
 	width: 200px;
 	margin-right: 40px;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .index-content-right-img {
@@ -105,6 +135,7 @@ body {
 .index-content-left-bridge {
 	float: right;
 	width: 200px;
+	vertical-align: middle;
 }
 .index-content-left-attractions {
 	display: inline-block;
@@ -132,18 +163,39 @@ body {
 	text-align: center;
 }
 
-.search {
-	width: 450px;
+.interesting {
+	font-size: 0;
 	text-align: center;
-	margin-left: 160px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+.interesting-quest {
+ 	font-size: 30px;
+ 	vertical-align: middle;
+}
+
+.date-hostel {
+	font-size: 14px;
+	vertical-align: middle;
+}
+.index-content-middle-hostels {
+	font-size: 21px;
+}
+
+.search {
+	width: 650px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 0;
 }
 
 .date-go {
-
+ font-size: 14px;
 }
 
 .date-start {
-
+font-size: 14px;
 }
 
 .calendar {
@@ -151,16 +203,17 @@ body {
 }
 
 .date-out {
-
+font-size: 14px;
 }
 
 .date-finish {
-
+font-size: 14px;
 }
 
 .adult {
 	display: inline-block;
 	margin-right: 20px;
+	font-size: 14px;
 
 }
 
@@ -174,6 +227,7 @@ body {
 
 .children {
 	display: inline-block;
+	font-size: 14px;
 
 }
 
@@ -185,47 +239,53 @@ body {
 
 }
 
-.fuond {
-
+.found {
+ 	font-size: 21px;
 }
 
 .main-footer {
-
+ font-size: 0;
 }
 
 .tag {
 	display: inline-block;
-	margin-right: 180px;
+	margin-right: 140px;
+	font-size: 21px;
 }
 .links {
 	display: inline-block;
-	margin-right: 180px;
+	margin-right: 140px;
+
 }
 .social-btn {
 
 }
 
 .social-btn-twitter {
-
+	font-size: 19px;
 }
 
 .social-btn-fb {
-
+	font-size: 19px;
 }
 
 .social-btn-YT {
-
+	font-size: 19px;
 }
 .link-academy {
 	display: inline-block;
+	font-size: 14px;
 }
 
 .prime {
 
 }
 
-.about-hostel {
 
+.about-hostel {
+	font-size: 0;
+	width: 700px;
+	margin: 0 auto;
 }
 .INFR {
 	display: inline-block;
@@ -235,6 +295,7 @@ body {
 .type-house {
 	display: inline-block;
 	margin-right: 60px;
+	font-size: 0;
 }
 
 .rangebar {
@@ -242,7 +303,7 @@ body {
 	width: 250px;
 }
 .type {
-
+ font-size: 16px;
 }
 
 .infastructure {
@@ -250,11 +311,12 @@ body {
 }
 
 .infrastructure-list {
-
+	margin:0;
+	padding:0;
 }
 
 .infrastructure-list-item {
-
+	font-size: 14px;
 }
 
 .prise {
@@ -290,31 +352,35 @@ body {
 }
 
 .find {
-
+	font-size: 0;
 }
 
 .find-about {
  	display: inline-block;
 	margin-right: 30px;
 	width: 150px;
+	font-size: 21px;
 }
 
 .sort {
-	display: inline-block;
-}
-
-.sort a {
 	display: inline-block;
 	margin-right: 30px;
 
 }
 
-.arrows {
+.sort a {
+	display: inline-block;
+	margin-right: 30px;
+	font-size: 12px;
+}
 
+.arrows {
+	display: inline-block;
+ 	font-size: 23px;
 }
 
 .menu {
-
+	font-size: 0;
 }
 
 .hostel {
@@ -337,20 +403,23 @@ body {
 }
 
 .hostel-name-title {
-
+	font-size: 21px;
 }
 
 .typeofhouse {
 	display: inline-block;
 	margin-right: 30px;
+	font-size: 14px;
 }
 
 .prise-about {
 	display: inline-block;
+	font-size: 14px;
 }
 
 .hostel-buttons {
  	display: inline-block;
+	font-size: 14px;
 }
 .hostel-buttons a {
 	margin-right: 10px;
@@ -365,10 +434,11 @@ body {
 }
 
 .stars {
-
+font-size: 19px;
+display: inline-block;
 }
 
 .rait {
-
+font-size: 14px;
 }
 

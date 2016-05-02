@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
     </head>
     <body class="debug">
         <div class="container">
@@ -32,17 +33,17 @@
             <div class="index-logo" style="background: blue;">
                 <img src="img/index-logo.png" width="768" height="470" alt="Welcome to the gargerous Sedona Because the Grand Canyon lucky!">
             </div>
-            <section class="features">
+            <section class="features clearfix">
                 <div class="features-item">
                     <h2 class="features-name">СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-                    <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+                    <p class="feat-name5">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
                 </div>
             </section>
             <section class="index-content-city clearfix">
                 <div class="index-content-left-city">
                     <h2 class="index-content-title">Настоящий городок</h2>
-                    <div> — №1 — </div>
-                    <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+                    <div class="sedona-isnt"> — №1 — </div>
+                    <p class="sedona-isnt">Седона — не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="index-content-right">
                     <img src="#" alt="Седона">
@@ -51,15 +52,15 @@
             <section class="index-content-plus">
                 <div class="index-content-left-house">
                     <h2 class="index-content-title">Жильё</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <p class="facts-size">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
                 <div class="index-content-middle-food">
                     <h2 class="index-content-title">Еда</h2>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p class="facts-size">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
                 <div class="index-content-right-souvenirs">
                     <h2 class="index-content-title">Сувениры</h2>
-                    <p>Не только китайского, но и местного производства!</p>
+                    <p class="facts-size">Не только китайского, но и местного производства!</p>
                 </div>
             </section>
             <section class="index-content-bridge clearfix">
@@ -68,33 +69,36 @@
                 </div>
                 <div class="index-content-left-bridge">
                     <h2 class="index-content-title">Там есть мост дьявола</h2>
-                    <div> — №2 — </div>
-                    <p>Да по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <div class="facts-size"> — №2 — </div>
+                    <p class="facts-size">Да по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </section>
             <section class="index-content-facts clearfix">
                 <div class="index-content-left-attractions">
                     <h2 class="index-content-title">Небольшая площадь</h2>
-                    <div> — №3 — </div>
-                    <p>Все достопримечательности находятся очень близко</p>
+                    <div class="facts-size"> — №3 — </div>
+                    <p class="facts-size">Все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="index-content-middle-road">
                     <h2 class="index-content-title">Красивая дорога</h2>
-                    <div> — №4 — </div>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <div class="facts-size"> — №4 — </div>
+                    <p class="facts-size">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
                 <div class="index-content-right-tourists">
                     <h2 class="index-content-title">Мало туристов</h2>
-                    <div> — №5 — </div>
-                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    <div class="facts-size"> — №5 — </div>
+                    <pclass="facts-size">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
             </section>
-            <section class="order">
+            <section class="order clearfix">
+                <div class="interesting">
+                    <h2 class="interesting-quest"> Заинтересовались?</h2>
+                    <p class="date-hostel"> Укажите предполагаемые поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                </div>
                 <div class="index-content-middle-hotels">
                     <a href="hhhh.html">Поиск гостиницы в Седоне</a>
                     <form action="sedona.echo">
                         <div class="search">
-                            <div class="clearfix">
                             <div class="date-go"> Дата заезда
                                 <input class="date-start" type="search" placeholder="24 апреля 2016">
                                 <button class="calendar" type="button">тут будет календарик</button>
@@ -103,16 +107,17 @@
                                 <input class="date-finish" type="search" placeholder="4 июля 2016">
                                 <button class="calendar" type="button">тут будет календарик</button>
                             </div>
-                            <div class="adult"> Взрослые
-                                <button class="adult-plus" type="button">+</button>
-                                <input class="adult-number" type="search" placeholder="2">
-                                <button class="adult-minus" type="button">-</button>
-                            </div>
-                            <div class="children">Дети
-                                <button class="children-plus" type="button">+</button>
-                                <input class="children-number" type="search" placeholder="0">
-                                <button class="children-minus" type="button">-</button>
-                            </div>
+                            <div class="people">
+                                <div class="adult"> Взрослые
+                                    <button class="adult-plus" type="button">+</button>
+                                    <input class="adult-number" type="search" placeholder="2">
+                                    <button class="adult-minus" type="button">-</button>
+                                </div>
+                                <div class="children">Дети
+                                    <button class="children-plus" type="button">+</button>
+                                    <input class="children-number" type="search" placeholder="0">
+                                    <button class="children-minus" type="button">-</button>
+                                </div>
                             </div>
                             <button class="found" type="submit"> Найти </button>
                         </div>
