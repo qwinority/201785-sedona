@@ -2,8 +2,47 @@
 body {
   font-weight: 400;
   font-family: "PT Sans", Arial, sans-serif;
-
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
 .container {
 	margin: 0 auto;
 	width: 768px;
@@ -63,6 +102,11 @@ body {
   vertical-align: middle;
   text-transform: uppercase;
   padding-bottom: 30px;
+}
+.list-item {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 .index-logo img {
   margin-top: 75px;
@@ -204,6 +248,7 @@ height: 76px;
 }
 .index-content-right-img {
 float: left;
+height: 256px;
 }
 .index-content-left-bridge {
 float: right;
@@ -253,6 +298,7 @@ margin: 0 auto;
 }
 .order {
 text-align: center;
+margin-bottom: -120px;
 }
 .interesting {
 font-size: 0;
@@ -264,33 +310,41 @@ margin: 0 auto;
 font-size: 30px;
 margin: 55px 0 35px 0;
 }
+.search-hostel {
+  position: fixed;
+}
 .date-hostel {
 font-size: 14px;
 text-align: center;
 margin: 0 0 55px 0;
 }
 .index-content-middle-hotels a {
+display: inline-block;
 font-size: 21px;
 background-color: #766357;
 color: white;
-padding: 35px 140px 35px 140px;
+width: 568px;
+margin: 0 auto;
+text-align: center;
 text-transform: uppercase;
+padding: 36px 0 36px 0;
+position: relative;
 }
 .card {
   background-image: url("../img/card.jpg");
   background-repeat: no-repeat;
   width: 768px;
-  min-height: 590px;
+  min-height: 748px;
 }
 .search {
-width: 570px;
+width: 568px;
 text-align: center;
 margin: 0 auto;
 font-size: 0;
-margin-top: 90px;
 text-transform: uppercase;
 position: relative;
 background-color: white;
+padding-top: 50px;
 }
 .date-go {
 font-size: 14px;
@@ -305,11 +359,15 @@ background-color: #f2f2f2;
 border: 2px solid #f2f2f2;
 min-height: 35px;
 }
-.calendar {
+.icon-calendar {
 position: absolute;
-margin-left: -23px;
+margin-left: -39px;
 background-color: #f2f2f2;
 border: 2px solid #f2f2f2;
+margin-top: 5px;
+color: #c2c2c2;
+padding: 0;
+font-size: 21px;
 }
 .date-out {
 font-size: 14px;
@@ -338,12 +396,6 @@ position: relative;
 .adult button {
   position: absolute;
 }
-.adult-plus {
-  background-color: #f2f2f2;
-border: 2px solid #f2f2f2;
-margin-left: 73px;
-margin-top: -24px;
-}
 .adult-number {
   width: 113px;
   text-align: center;
@@ -351,13 +403,7 @@ margin-top: -24px;
 border: 2px solid #f2f2f2;
 min-height: 35px;
 }
-.adult-minus {
-  background-color: #f2f2f2;
-border: 2px solid #f2f2f2;
 
-
-
-}
 .children {
 display: inline-block;
 font-size: 14px;
@@ -365,11 +411,11 @@ font-size: 14px;
 .children button {
   position: absolute;
 }
-.children-plus {
+.icon-plus {
 background-color: #f2f2f2;
 border: 2px solid #f2f2f2;
 margin-left: 57px;
-    margin-top: -24px;
+margin-top: -32px;
 
 }
 .children-number {
@@ -379,12 +425,13 @@ margin-left: 57px;
 border: 2px solid #f2f2f2;
 min-height: 35px;
 }
-.children-minus {
-    background-color: #f2f2f2;
+.icon-minus {
+background-color: #f2f2f2;
 border: 2px solid #f2f2f2;
-
-
-
+margin-top: 9px;
+}
+.children .icon-plus{
+  margin-left: 42px;
 }
 .found {
 font-size: 21px;
@@ -396,30 +443,49 @@ margin-bottom: 55px;
 }
 .main-footer {
 font-size: 0;
+padding: 50px 25px 50px 60px;
+background: rgba(254, 254, 254, 0.9);
 }
 .tag {
 display: inline-block;
-margin-right: 110px;
-font-size: 21px;
+margin-right: 100px;
+}
+.tag-sedona {
+  font-size: 21px;
+text-decoration: none;
+color: black;
 }
 .links {
 display: inline-block;
 margin-right: 80px;
 }
 .social-btn {
+background-color: #81b3d2;
+color: white;
+text-decoration: none;
+padding: 14px 14px 14px 14px;
 }
-.social-btn-twitter {
+.icon-twitter{
+font-size: 19px;
+margin-right: 5px;
+}
+.icon-facebook{
+font-size: 19px;
+margin-right: 5px;
+}
+.icon-youtube {
 font-size: 19px;
 }
-.social-btn-fb {
-font-size: 19px;
-}
-.social-btn-YT {
-font-size: 19px;
+.website {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  vertical-align: middle;
 }
 .link-academy {
 display: inline-block;
 font-size: 14px;
+
 }
 .link-academy a{
 margin-bottom: 10px;
@@ -427,7 +493,7 @@ margin-bottom: 10px;
 .about-hostel {
 font-size: 0;
 width: 768px;
-height: 418px;
+height: 250px;
 margin: 0 auto;
 background-image: url("../img/headhostel.jpg");
 background-color: #d4e7f0;
@@ -435,33 +501,26 @@ background-repeat: no-repeat;
 color: white;
 display: inline-block;
 padding-top: 29px;
+padding-bottom: 0;
 }
-.about-hostel::after {
-  content: '';
-  background-color: white;
-  display: inline-block;
-  width: 768px;
-  height: 163px;
-  margin-top: 85px;
-}
-.INFR {
+.checkbox-infrastructure {
 display: inline-block;
-margin-right: 75px;
+margin-right: 65px;
 margin-left: 46px;
 width: 140px;
 text-transform: uppercase;
-
 }
 .type-house {
 display: inline-block;
-width: 140px;
-margin-right: 75px;
+width: 135px;
+margin-right: 65px;
 text-transform: uppercase;
 }
 .rangebar {
 display: inline-block;
-width: 270px;
+width: 225px;
 margin-right: 46px;
+margin-top: 0;
 }
 .type {
 font-size: 16px;
@@ -475,14 +534,18 @@ padding: 0;
 margin:0;
 padding:0;
 }
+
 .infrastructure-list-item {
 font-size: 14px;
 padding-bottom: 20px;
+list-style-type: none;
 }
 .prise {
 }
-
-
+.icon {
+  border: 0;
+  text-decoration: none;
+}
 .filter-range {
   width: 270px;
 
@@ -620,13 +683,11 @@ padding-bottom: 20px;
   background: #ffffff;
 }
 
-}
 .find {
-  display: inline-block;
-	font-size: 0;
-  margin-bottom: 65px;
+font-size: 0;
+border-bottom: 1px solid #e5e5e5;
+padding: 35px 46px 35px 46px;
 }
-
 .find-about {
 	display: inline-block;
 	margin-right: 30px;
@@ -648,18 +709,44 @@ text-transform: uppercase;
 display: inline-block;
 margin-right: 30px;
 font-size: 12px;
+text-decoration: none;
+}
+.sort-price {
+  color: #81b3d2;
+}
+.sort-type {
+  color: #b2b2b2;
+  border-bottom: 2px dotted #81b3d2;
+}
+.sort-rait {
+  color: #b2b2b2;
+  border-bottom: 2px dotted #81b3d2;
 }
 .arrows {
 display: inline-block;
 font-size: 23px;
-margin-left: 85px;
+margin-left: 55px;
+}
+.icon-up-dir {
+  text-decoration: none;
+  color: #cccccc;
+  display: inline-block;
+  width: 10px;
+}
+.icon-down-dir {
+  color: #81b3d2;
+  text-decoration: none;
+  display: inline-block;
+  width: 10px;
 }
 .menu {
 font-size: 0;
 }
 .hostel {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
 }
 .photo-hostel {
 display: inline-block;
@@ -669,7 +756,7 @@ margin-right: 24px;
 .hostel-info {
 display: inline-block;
 width: 300px;
-margin-right: 160px;
+margin-right: 125px;
 }
 .hostel-name {
 display: inline-block;
@@ -705,6 +792,18 @@ font-size: 14px;
 .hostel-buttons a {
 margin-right: 10px;
 }
+.button-about {
+  text-decoration: none;
+  padding: 8px 16px 8px 16px;
+  background-color: #81b3d2;
+  color: white;
+}
+.button-book {
+  text-decoration: none;
+  padding: 8px 16px 8px 16px;
+  background-color: #766357;
+  color: white;
+}
 .rating {
 display: inline-block;
 }
@@ -712,10 +811,15 @@ display: inline-block;
 padding-bottom: 50px;
 text-align: right;
 }
-.stars {
+.icon-star{
 font-size: 19px;
 display: inline-block;
+color: #81b3d2;
 }
 .rait {
 font-size: 14px;
+text-align: right;
+padding: 8px 16px 8px 16px;
+background-color: #f2f2f2;
+color: #666666;
 }
