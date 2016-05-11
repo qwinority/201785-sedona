@@ -477,14 +477,17 @@ margin-right: 5px;
 font-size: 19px;
 }
 .website {
-  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
   text-transform: uppercase;
   color: black;
-  vertical-align: middle;
+  padding-top: 10px;
+  margin-right: 5px;
 }
 .link-academy {
 display: inline-block;
 font-size: 14px;
+vertical-align: top;
 
 }
 .link-academy a{
@@ -540,11 +543,29 @@ font-size: 14px;
 padding-bottom: 20px;
 list-style-type: none;
 }
-.prise {
+input[type="checkbox"] {
+  display: none;
 }
-.icon {
-  border: 0;
-  text-decoration: none;
+input[type="checkbox"] + label {
+  line-height: 25px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+  content: "\2610";
+    font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  font-size: 26px;
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked + label::before {
+  content: "\2611";
+  margin-right: 6px;
+}
+.prise {
 }
 .filter-range {
   width: 270px;
@@ -747,6 +768,9 @@ font-size: 0;
   text-transform: uppercase;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 30px;
+}
+.hostel:last-child {
+  margin-bottom: 0;
 }
 .photo-hostel {
 display: inline-block;
