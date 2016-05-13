@@ -37,7 +37,7 @@
             <section class="features">
                 <div class="features-item">
                     <h2 class="features-name">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-                    <p class="feat-name5">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+                    <p class="feat-name-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                 </div>
             </section>
             <section class="index-content-city clearfix">
@@ -50,7 +50,7 @@
                     <img src="img/photo1.jpg" width="512" height="256" alt="Седона">
                 </div>
             </section>
-            <section class="index-content-plus clearfix">
+            <section class="index-content-plus">
                 <div class="index-content-left-house">
                     <h2 class="index-content-title">Жильё</h2>
                     <p class="facts-size">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -74,7 +74,7 @@
                     <p class="facts-size">Да по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </section>
-            <section class="index-content-facts clearfix">
+            <section class="index-content-facts">
                 <div class="index-content-left-attractions">
                     <h2 class="index-content-title-fact">Небольшая площадь</h2>
                     <div class="sedona-nmbr"> — №3 — </div>
@@ -91,7 +91,7 @@
                     <p class="facts-size">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
             </section>
-            <section class="order clearfix">
+            <section class="order">
                 <div class="interesting">
                     <h2 class="interesting-quest"> Заинтересовались?</h2>
                     <p class="date-hostel"> Укажите предполагаемые поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -99,27 +99,37 @@
                 <div class="index-content-middle-hotels">
                     <a href="hhhh.html">Поиск гостиницы в Седоне</a>
                 </div>
-                <div class="card">
+                <div class="map">
                     <form action="sedona.echo">
-                        <div class="search">
-                            <div class="date-go"> Дата заезда:
-                                <input class="date-start" type="search" placeholder="24 апреля 2016">
+                        <div class="search clearfix">
+                            <div class="date-go"><label> Дата заезда:</label>
+                                <div class="buttons-calendar">
+                                <input class="date-start" type="search" placeholder="24 апреля 2016"><label></label>
                                 <button class="icon-calendar" type="button"></button>
                             </div>
-                            <div class="date-out"> Дата выезда:
-                                <input class="date-finish" type="search" placeholder="4 июля 2016">
+                            </div>
+                            <div class="date-out"><label> Дата выезда:</label>
+                                <div class="buttons-calendar">
+                                <input class="date-finish" type="search" placeholder="4 июля 2016"><label></label>
                                 <button class="icon-calendar" type="button"></button>
                             </div>
-                            <div class="people">
-                                <div class="adult"> Взрослые:
+                            </div>
+                            <div class="people clearfix">
+                                <div class="adult">
+                                    <label>Взрослые:</label>
+                                    <div class="buttons">
                                     <button class="icon-minus" type="button"></button>
-                                    <input class="adult-number" type="search" placeholder="2">
+                                    <input class="adult-number" type="search" placeholder="2"><label></label>
                                     <button class="icon-plus" type="button"></button>
                                 </div>
-                                <div class="children"> Дети:
+                                </div>
+                                <div class="children">
+                                    <label>Дети:</label>
+                                    <div class="buttons">
                                     <button class="icon-minus" type="button"></button>
                                     <input class="children-number" type="search" placeholder="0">
                                     <button class="icon-plus" type="button"></button>
+                                </div>
                                 </div>
                             </div>
                             <button class="found" type="submit"> Найти </button>
