@@ -103,7 +103,7 @@ body {
 }
 .list-item {
   text-decoration: none;
-  color: black;
+  color: #000000;
   font-weight: bold;
 }
 .index-logo img {
@@ -174,6 +174,9 @@ margin: 0;
 float: right;
 width: 512px;
 }
+.index-content-right img {
+  display: block;
+}
 .index-content-left-city {
 float: left;
 width: 256px;
@@ -182,7 +185,6 @@ padding-right: 30px;
 padding-left: 30px;
 box-sizing: border-box;
 background-color: #81b3d2;
-text-transform: uppercase;
 padding-top: 45px
 }
 
@@ -205,7 +207,6 @@ display: inline-block;
 width: 165px;
 text-align: center;
 vertical-align: middle;
-text-transform: uppercase;
 margin-right: 90px;
 }
 .index-content-left-house::before {
@@ -219,7 +220,6 @@ display: inline-block;
 width: 165px;
 text-align: center;
 vertical-align: middle;
-text-transform: uppercase;
 margin-right: 90px;
 }
 .index-content-middle-food::before {
@@ -233,7 +233,6 @@ display: inline-block;
 width: 165px;
 text-align: center;
 vertical-align: middle;
-text-transform: uppercase;
 }
 .index-content-right-souvenirs::before {
 content: url("../img/souvenirs.png");
@@ -257,7 +256,6 @@ padding-right: 30px;
 padding-left: 30px;
 box-sizing: border-box;
 background-color: #81b3d2;
-
 padding-top: 45px
 }
 .index-content-facts {
@@ -313,7 +311,7 @@ margin: 0 0 55px 0;
 display: inline-block;
 font-size: 21px;
 background-color: #766357;
-color: white;
+color: #ffffff;
 width: 568px;
 text-align: center;
 padding: 36px 0 36px 0;
@@ -332,7 +330,7 @@ position: relative;
 width: 568px;
 margin: 0 auto;
 font-size: 0;
-background-color: white;
+background-color: #ffffff;
 padding-top: 50px;
 }
 .date-go {
@@ -458,7 +456,7 @@ min-height: 35px;
 }
 .found {
 font-size: 21px;
-color: white;
+color: #ffffff;
 background-color: #81b3d2;
 border: 0;
 padding: 17px 195px 21px 195px;
@@ -476,7 +474,7 @@ margin-right: 100px;
 .tag-sedona {
   font-size: 21px;
 text-decoration: none;
-color: black;
+color: #00000;
 }
 .links {
 display: inline-block;
@@ -484,9 +482,9 @@ margin-right: 80px;
 }
 .social-btn {
 background-color: #81b3d2;
-color: white;
+color: #ffffff;
 text-decoration: none;
-padding: 14px 14px 14px 14px;
+padding: 14px;
 }
 .icon-twitter{
 font-size: 19px;
@@ -502,7 +500,7 @@ font-size: 19px;
 .website {
   display: inline-block;
   vertical-align: top;
-  color: black;
+  color: #000000;
   padding-top: 10px;
   margin-right: 5px;
 }
@@ -515,31 +513,30 @@ vertical-align: top;
 .about-hostel {
 font-size: 0;
 width: 768px;
-height: 250px;
 background-image: url("../img/headhostel.jpg");
 background-color: #d4e7f0;
 background-repeat: no-repeat;
-color: white;
+color: #ffffff;
 display: inline-block;
-padding-top: 29px;
-padding-bottom: 0;
+padding: 30px 0;
 }
 .checkbox-infrastructure {
 display: inline-block;
 margin-right: 65px;
 margin-left: 46px;
 width: 140px;
+vertical-align: middle;
 }
 .type-house {
 display: inline-block;
 width: 135px;
 margin-right: 65px;
+vertical-align: middle;
 }
 .rangebar {
 display: inline-block;
-width: 225px;
-margin-right: 46px;
-margin-top: 0;
+width: 275px;
+vertical-align: middle;
 }
 .type {
 font-size: 16px;
@@ -717,7 +714,7 @@ input[type="checkbox"]:checked + label::before {
 .find {
 font-size: 0;
 border-bottom: 1px solid #e5e5e5;
-padding: 35px 46px 35px 46px;
+padding: 30px 46px;
 }
 .find-about {
 	display: inline-block;
@@ -781,11 +778,13 @@ margin-left: 55px;
 display: inline-block;
 margin-left: 46px;
 margin-right: 24px;
+width: 135px;
+height: 90px;
 }
 .hostel-info {
 display: inline-block;
 width: 300px;
-margin-right: 125px;
+margin-right: 100px;
 }
 .hostel-name {
 display: inline-block;
@@ -825,13 +824,13 @@ margin-right: 10px;
   text-decoration: none;
   padding: 8px 16px 8px 16px;
   background-color: #81b3d2;
-  color: white;
+  color: #ffffff;
 }
 .button-book {
   text-decoration: none;
   padding: 8px 16px 8px 16px;
   background-color: #766357;
-  color: white;
+  color: #ffffff;
 }
 .rating {
 display: inline-block;
