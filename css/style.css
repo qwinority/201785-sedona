@@ -34,8 +34,13 @@ body {
 
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-up-dir::before {content: "\25b2";
+ width: 10px;
+    margin: 0;
+} /* "▲" */
+.icon-down-dir::before { content: "\25bc";
+ width: 10px;
+  margin: 0; } /* "▼" */
 .icon-star::before { content: "\2605"; } /* "★" */
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
@@ -54,52 +59,54 @@ body {
 }
 .main-navigation-list {
 	margin:0;
-	padding:0;
+	padding:0 46px;
   margin-bottom: -35px;
 }
 .main-navigation-list-item-inf {
-	display: inline-block;
-	margin-right: 45px;
-	margin-left: 46px;
-	font-size: 14px;
-	width: 95px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+    display: inline-block;
+    margin-right: 61px;
+    font-size: 14px;
+    width: 95px;
+    vertical-align: top;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 18px;
 }
 .main-navigation-list-item-media {
-	display: inline-block;
-	margin-right: 5px;
-	font-size: 14px;
-	width: 110px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 14px;
+    width: 110px;
+    vertical-align: top;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 18px;
 }
 .main-navigation-list-item-img {
 	display: inline-block;
-	margin-right: 20px;
+	margin-right: 25px;
 	font-size: 14px;
 	width: 140px;
   vertical-align: middle;
 }
 .main-navigation-list-item-card {
-	display: inline-block;
-	margin-right: 70px;
-	font-size: 14px;
-	width: 95px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+display: inline-block;
+    margin-right: 65px;
+    font-size: 14px;
+    width: 95px;
+    vertical-align: top;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 18px;
 }
 .main-navigation-list-item-hostels {
-	display: inline-block;
-	margin-right: 46px;
-	font-size: 14px;
-	width: 80px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+    display: inline-block;
+    font-size: 14px;
+    width: 80px;
+    vertical-align: top;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    padding-top: 18px;
 }
 .list-item {
   text-decoration: none;
@@ -107,13 +114,13 @@ body {
   font-weight: bold;
 }
 .index-logo img {
-  margin-top: 75px;
+  margin-top: 78px;
 }
 .index-logo {
 	background-image: url("../img/header.jpg");
 	background-color: #d9ecf5;
 	width: 768px;
-	height: 507px;
+	height: 510px;
 	background-repeat: no-repeat;
 	text-align: center;
   display: inline-block;
@@ -132,43 +139,48 @@ body {
   margin-bottom: 56px;
   width: 490px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 49px;
 }
 .features-name {
 	font-size: 21px;
+  margin-bottom: 31px;
 }
 .feat-name-reasons {
 	font-size: 14px;
 }
 .index-content-city {
-margin-bottom: 55px;
+margin-bottom: 58px;
 }
 .index-content-title {
 font-size: 21px;
 text-align: center;
 margin: 0;
+line-height: 23px;
 }
 .index-content-title-bridge {
 font-size: 21px;
 text-align: center;
-margin: 0 0 29px 0;
+line-height: 22px;
+padding-left: 9px;
+width: 151px;
 }
 .index-content-title-fact {
 font-size: 21px;
 text-align: center;
 margin: 45px 0 0 0;
+    line-height: 23px;
 }
 .sedona-nmbr {
 font-size: 14px;
 text-align: center;
-margin: 28px 0 28px 0;
+margin: 23px 0 23px 0;
+    line-height: 15px;
 }
 .sedona-life {
 font-size: 14px;
 text-align: center;
 margin: 0;
-}
-.index-content-left {
+line-height: 22px;
 }
 .index-content-right {
 float: right;
@@ -185,7 +197,8 @@ padding-right: 30px;
 padding-left: 30px;
 box-sizing: border-box;
 background-color: #81b3d2;
-padding-top: 45px
+padding-top: 45px;
+color: #ffffff;
 }
 
 .clearfix:after {
@@ -196,18 +209,25 @@ clear: both;
 
 .index-content-plus {
 font-size: 0;
-margin: 0 46px 65px 46px;
+    margin: 0 46px 47px 46px;
 }
 .facts-size {
-font-size: 14px;
-text-align: center;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+}
+.index-content-title-list {
+    font-size: 21px;
+    padding-top: 5px;
+    padding-bottom: 3px;
 }
 .index-content-left-house {
-display: inline-block;
-width: 165px;
-text-align: center;
-vertical-align: middle;
-margin-right: 90px;
+    display: inline-block;
+    width: 164px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 97px;
+
 }
 .index-content-left-house::before {
 content: url("../img/house.png");
@@ -217,10 +237,10 @@ height: 76px;
 }
 .index-content-middle-food {
 display: inline-block;
-width: 165px;
-text-align: center;
-vertical-align: middle;
-margin-right: 90px;
+    width: 155px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 96px;
 }
 .index-content-middle-food::before {
 content: url("../img/burger.png");
@@ -229,10 +249,10 @@ width: 74px;
 height: 76px;
 }
 .index-content-right-souvenirs {
-display: inline-block;
-width: 165px;
-text-align: center;
-vertical-align: middle;
+    display: inline-block;
+    width: 164px;
+    text-align: center;
+    vertical-align: middle;
 }
 .index-content-right-souvenirs::before {
 content: url("../img/souvenirs.png");
@@ -252,15 +272,22 @@ width: 512px;
 float: right;
 width: 256px;
 min-height: 256px;
-padding-right: 30px;
-padding-left: 30px;
+padding-right: 46px;
+padding-left: 46px;
 box-sizing: border-box;
 background-color: #81b3d2;
-padding-top: 45px
+padding-top: 30px;
+color: #ffffff;
 }
+.sedona-nmbr-bridge {
+font-size: 14px;
+text-align: center;
+margin: 23px 0 23px 0;
+    line-height: 19px;
+  }
 .index-content-facts {
   font-size: 0;
-  min-height: 256px;
+  height: 256px;
   background-color: #eeeeee;
   width: 768px;
 }
@@ -270,7 +297,7 @@ padding-top: 45px
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
-    padding: 50px 46px 43px 50px;
+    padding: 0 46px 43px 50px;
 }
 .index-content-middle-road {
     display: inline-block;
@@ -278,7 +305,7 @@ padding-top: 45px
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
-    padding: 50px 63px 43px 55px;
+    padding: 0 51px 43px 55px;
 
 }
 .index-content-right-tourists {
@@ -287,7 +314,7 @@ padding-top: 45px
     text-align: center;
     vertical-align: middle;
     box-sizing: border-box;
-    padding: 50px 46px 43px 55px;
+    padding: 0 51px 43px 55px;
 }
 .order {
 text-align: center;
@@ -300,22 +327,23 @@ margin: 0 auto;
 }
 .interesting-quest {
 font-size: 30px;
-margin: 55px 0 35px 0;
+margin-top: 48px;
 }
 .date-hostel {
 font-size: 14px;
 text-align: center;
-margin: 0 0 55px 0;
+    margin-bottom: 46px;
+    line-height: 23px;
 }
 .index-content-middle-hotels a {
-display: inline-block;
-font-size: 21px;
-background-color: #766357;
-color: #ffffff;
-width: 568px;
-text-align: center;
-padding: 36px 0 36px 0;
-position: relative;
+    display: inline-block;
+    font-size: 21px;
+    background-color: #766357;
+    color: #ffffff;
+    width: 558px;
+    text-align: center;
+    padding: 30px 3px 30px 7px;
+    text-decoration: none;
 }
 .map {
   background-image: url("../img/card.jpg");
@@ -323,48 +351,45 @@ position: relative;
   width: 768px;
   min-height: 748px;
 }
-.sedona.echo {
-  position: fixed;
-}
+
 .search {
 width: 568px;
 margin: 0 auto;
 font-size: 0;
 background-color: #ffffff;
-padding-top: 50px;
+padding-top: 47px;
 }
 .date-go {
 font-size: 14px;
-margin-bottom: 28px;
+margin-bottom: 15px;
 }
 .date-start {
 font-size: 14px;
-width: 345px;
-background-color: #f2f2f2;
-border: 2px solid #f2f2f2;
-min-height: 35px;
+    width: 340px;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    min-height: 35px;
 }
 .icon-calendar {
-position: absolute;
-margin-left: -39px;
-background-color: #f2f2f2;
-border: 2px solid #f2f2f2;
-margin-top: 5px;
-color: #c2c2c2;
-padding: 0;
-font-size: 21px;
+    margin-left: -41px;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    margin-top: 6px;
+    color: #c2c2c2;
+    padding: 0;
+    font-size: 21px;
 }
 .date-go label {
     float: left;
     text-align: left;
-    padding: 10px;
-    padding-bottom: 0px;
+    padding: 18px 0 15px 9px;
     margin-left: 50px;
 }
 .buttons-calendar {
-    float: right;
+float: right;
     width: 355px;
-    margin-right: 40px;
+    margin-right: 48px;
+    margin-top: 4px;
     color: #c2c2c3;
 }
 .date-out {
@@ -374,15 +399,15 @@ margin-bottom: 28px;
 .date-out label{
     float: left;
     text-align: left;
-    padding: 30px 0 0 30px;
-    margin-left: 30px;
+    padding: 19px 0 0 30px;
+    margin-left: 27px;
 }
 .date-finish {
-font-size: 14px;
-width: 345px;
-background-color: #f2f2f2;
-border: 2px solid #f2f2f2;
-min-height: 35px;
+    font-size: 14px;
+    width: 340px;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    min-height: 35px;
 }
 .people {
 
@@ -390,25 +415,28 @@ min-height: 35px;
     padding: 0px 55px;
   }
 .adult {
-      display: inline-block;
-    margin-right: 40px;
+    display: inline-block;
     font-size: 0;
     width: 220px;
     text-align: left;
+    margin-left: 30px;
   }
 .adult label {
- font-size: 14px;
+font-size: 14px;
     float: left;
     text-align: left;
     width: 80px;
-    padding: 10px 40px 0px 0px;
+    padding-right: 35px;
+    padding-bottom: 50px;
+    margin-left: -31px;
+    padding-top: 11px;
 }
 .adult-number {
-    width: 22px;
+    width: 35px;
     text-align: center;
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
-    min-height: 35px;
+    min-height: 34px;
     font-size: 14px;
     display: inline-block;
 }
@@ -416,7 +444,7 @@ min-height: 35px;
 .children {
     display: inline-block;
     font-size: 0;
-    margin-right: 20px;
+    margin-left: 30px;
     width: 175px;
     text-align: left;
     padding-bottom: 10px;
@@ -431,11 +459,11 @@ min-height: 35px;
 }
 .children-number {
     display: inline-block;
-    width: 22px;
+    width: 35px;
     text-align: center;
     background-color: #f2f2f2;
     border: 2px solid #f2f2f2;
-    min-height: 35px;
+    min-height: 34px;
     font-size: 14px;
 }
 .icon-minus {
@@ -447,15 +475,20 @@ min-height: 35px;
     color: #a9a9a9;
 }
 .children label{
-  font-size: 14px;
+    font-size: 14px;
     float: left;
     text-align: left;
     width: 40px;
     padding-top: 10px;
+    padding-right: 22px;
 }
-.buttons {
+.buttons-adult {
     float: right;
-    width: 100px;
+    width: 136px;
+}
+.buttons-children {
+    float: right;
+    width: 136px;
 }
 .found {
 font-size: 21px;
