@@ -365,6 +365,7 @@ font-size: 21px;
     float: right;
     width: 355px;
     margin-right: 40px;
+    color: #c2c2c3;
 }
 .date-out {
 font-size: 14px;
@@ -426,6 +427,7 @@ min-height: 35px;
     display: inline-block;
     font-size: 14px;
     min-height: 40px;
+    color: #a9a9a9;
 }
 .children-number {
     display: inline-block;
@@ -442,6 +444,7 @@ min-height: 35px;
     display: inline-block;
     font-size: 14px;
     min-height: 40px;
+    color: #a9a9a9;
 }
 .children label{
   font-size: 14px;
@@ -850,4 +853,111 @@ text-align: right;
 padding: 8px 16px 8px 16px;
 background-color: #f2f2f2;
 color: #666666;
+}
+
+.icon:disabled {
+  color: #6a6a6a;
+}
+.range-toggle:hover {
+  color: #1c4f80;
+}
+.btn-transparent:hover {
+  background-color: #ffffff;
+}
+.list-item:hover {
+  color: #81b3d2;
+}
+.list-item:active {
+  color: #b2b2b2;
+}
+.list-item-active {
+  color: #604e43;
+}
+.list-item-active:hover {
+  color: #604e43;
+}
+.list-item-active:active {
+  color: #dbd6d3;
+}
+a.sort:hover {
+  color: #81b3d2;
+}
+a.sort:active {
+  color: #000000;
+}
+.arrows a:hover {
+  color: #000000;
+}
+.arrows a:active {
+  color: #81b3d2;
+}
+.button-about:hover {
+  background-color: #669ec0;
+}
+.button-about:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.button-book:hover {
+  background-color: #604e43;
+}
+.button-book:active {
+  background-color: #503e33;
+  color: #857871;
+}
+.hostel-name-title:hover {
+  color: #81b3d2;
+}
+.hostel-name-title:active {
+  color: #b2b2b2;
+}
+.date-start:hover {
+  background-color: #ebebeb;
+}
+.date-start:active {
+  background-color: #ffffff;
+}
+.date-finish:hover {
+  background-color: #ebebeb;
+}
+.date-finish:active {
+  background-color: #ffffff;
+}
+.icon-plus:hover {
+  color: #000000;
+}
+.icon-plus:active {
+  color: #81b3d2;
+}
+.icon-minus:hover {
+  color: #000000;
+}
+.icon-minus:active {
+  color: #81b3d2;
+}
+.buttons-calendar:hover {
+  color: #000000;
+}
+.buttons-calendar:active {
+  color: #81b3d2;
+}
+.found:hover {
+  background-color: #669ec0;
+}
+.found:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.social-btn:hover {
+  background-color: #669ec0;
+}
+.social-btn:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+.link-academy img:hover {
+  background-color: #81b3d2;
+}
+.link-academy img:active {
+  color: #bdbbbc;
 }
