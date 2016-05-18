@@ -132,7 +132,7 @@ text-transform: uppercase;
 margin-bottom: 56px;
 width: 490px;
 text-align: center;
-margin-top: 49px;
+margin-top: 54px;
 }
 .features-name {
 font-size: 21px;
@@ -550,7 +550,7 @@ text-transform: uppercase;
 }
 .main-footer {
 font-size: 0;
-padding: 36px 25px 50px 60px;
+padding: 38px 25px 50px 60px;
 background: rgba(254, 254, 254, 0.9);
 }
 .tag {
@@ -658,19 +658,16 @@ color: #ffffff;
 padding-bottom: 20px;
 margin: 0;
 padding: 0;
-
 }
 .infrastructure-list {
 margin:0;
 padding:0;
 color: #ffffff;
 }
-
 .infrastructure-list-item {
 font-size: 14px;
 line-height: 46px;
 list-style-type: none;
-
 }
 input[type="checkbox"] {
 display: none;
@@ -826,18 +823,20 @@ display: inline-block;
 margin-right: 33px;
 font-size: 12px;
 text-decoration: none;
-vertical-align: middle;
 }
 .sort-price {
 color: #81b3d2;
+vertical-align: middle;
 }
 .sort-type {
 color: #b2b2b2;
 border-bottom: 2px dotted #81b3d2;
+vertical-align: top;
 }
 .sort-rait {
 color: #b2b2b2;
 border-bottom: 2px dotted #81b3d2;
+vertical-align: top;
 }
 .arrows {
 display: inline-block;
@@ -857,7 +856,7 @@ color: #81b3d2;
 text-decoration: none;
 display: inline-block;
 vertical-align: middle;
-width: 10px;
+width: 14px;
 }
 .hostel {
 border-bottom: 1px solid #e5e5e5;
@@ -868,15 +867,11 @@ margin-bottom: 0;
 }
 .photo-hostel {
 display: inline-block;
-vertical-align: middle;
+vertical-align: bottom;
 margin-left: 46px;
 margin-right: 27px;
 width: 135px;
 height: 90px;
-background-color: #ec8c73;
-}
-.photo-hostel img {
-margin-bottom: -9px;
 }
 .hostel-info {
 display: inline-block;
@@ -946,8 +941,8 @@ display: inline-block;
 vertical-align: middle;
 }
 .rating-stars {
-padding-bottom: 42px;
 text-align: right;
+margin-top: 26px;
 }
 .icon-star{
 font-size: 19px;
@@ -963,6 +958,7 @@ text-align: right;
 padding: 5px 15px 5px 13px;
 background-color: #f2f2f2;
 color: #666666;
+margin-top: 41px;
 }
 input[type="checkbox"]:disabled + label::before{
 color: #6a6a6a;
