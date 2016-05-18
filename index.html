@@ -12,20 +12,20 @@
             <header class="main-header">
                 <nav class="main-navigation">
                     <ul class="main-navigation-list">
-                        <li class="list-item list-item-active main-navigation-list-item-inf">
+                        <li class="main-navigation-list-item-inf">
                             <a class="list-item" href="#">Информация</a>
                         </li>
-                        <li class="list-item list-item-active main-navigation-list-item-media">
+                        <li class="main-navigation-list-item-media">
                             <a class="list-item" href="#">Фото и видео</a>
                         </li>
                         <li class="main-navigation-list-item-img">
-                            <img src="img/topmenu.png" width="138" height="90" alt="Седона">
+                            <a class="home" href="index.html"><img src="img/topmenu.png" width="138" height="90" alt="Седона"></a>
                         </li>
-                        <li class="list-item list-item-active main-navigation-list-item-card">
+                        <li class="main-navigation-list-item-card">
                             <a class="list-item" href="#">Карта штата</a>
                         </li>
-                        <li class="list-item list-item-active main-navigation-list-item-hostels">
-                            <a class="list-item" href="hostels.html">Гостиницы</a>
+                        <li class="main-navigation-list-item-hostels">
+                            <a class="list-item list-item-active" href="hostels.html">Гостиницы</a>
                         </li>
                     </ul>
                 </nav>
@@ -68,7 +68,7 @@
                 <div class="index-content-right-img">
                     <img src="img/photo2.jpg" width="512" height="256" alt="Седона">
                 </div>
-                <div class="index-content-left-bridge">
+                <div class="index-content-left-bridge clearfix">
                     <h2 class="index-content-title-bridge">Там есть мост дьявола</h2>
                     <div class="sedona-nmbr-bridge"> — №2 — </div>
                     <p class="facts-size">Да по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -119,7 +119,7 @@
                             <label for="adult">Взрослые:</label>
                             <div class="buttons-adult">
                                 <button class="icon-minus" type="button"></button>
-                                <input class="adult-number" id="adult" type="search" placeholder="2">
+                                <input class="adult-number" id="adult" type="search" value="2">
                                 <button class="icon-plus" type="button"></button>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                             <label for="children">Дети:</label>
                             <div class="buttons-children">
                                 <button class="icon-minus" type="button"></button>
-                                <input class="children-number" id="children" type="search" placeholder="0">
+                                <input class="children-number" id="children" type="search" value="2">
                                 <button class="icon-plus" type="button"></button>
                             </div>
                         </div>
