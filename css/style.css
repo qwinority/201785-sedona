@@ -665,6 +665,7 @@ margin:0;
 padding:0;
 color: #ffffff;
 }
+
 .infrastructure-list-item {
 font-size: 14px;
 line-height: 46px;
@@ -963,10 +964,10 @@ padding: 5px 15px 5px 13px;
 background-color: #f2f2f2;
 color: #666666;
 }
-.icon-check-on:disabled {
+input[type="checkbox"]:disabled + label::before{
 color: #6a6a6a;
 }
-.icon-check-off:disabled {
+input[type="checkbox"]:checked:disabled + label::before{
 color: #6a6a6a;
 }
 .range-toggle:hover {
